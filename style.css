@@ -1,75 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px; /* Increased for readability */
+  line-height: 1.5; /* Improved text spacing */
+  background-color: #f5f5f5; /* Lighter background */
 }
 
 #tentacles {
-    width: 50px;
+  width: 50px;
 }
 
 .header {
-    display: flex;
-    background-color: lightblue;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+  display: flex;
+  background-color: #54a0ff; /* More vibrant header color */
+  padding: 2%;
+  align-items: center;
+  margin: 0 -10px; /* good margin */
+}
+
+.header h1 {
+  font-weight: 600; /* Bolder  text */
+  font-size: 2rem; /* Larger  text */
 }
 
 .stats-container {
-    display: flex;
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Added spacing */
 }
 
 .stats-card {
-    background-color: #a8b0bc;
-    border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
-    text-align: center;
+  background-color: #e5e5e5; /* Lighter card background */
+  border-radius: 10px;
+  padding: 2%;
+  margin: 1%;
+  width: 40%; /* Adjusted card width */
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out; /* Smoother hover effect */
+}
+
+.stats-card:hover {
+  box-shadow: 0 0 20px #54a0ff; /* More nice hover shadow */
 }
 
 #num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+  font-size: 30px; /* Slightly smaller numbers */
 }
 
 #games-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px; /* Added spacing */
 }
 
 .game-img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #f5f5f5; /* Lighter shadow */
 }
 
 .game-card {
-    background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
-    width: 300px;
-    text-align: center;
-    border-radius: 7px;
+  background-color: #ffffff;
+  padding: 2%;
+  margin: 1%;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out; /* Smoother hover effect */
 }
 
 .game-card:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+  cursor: pointer;
+  box-shadow: 0 0 20px #54a0ff; /* More vibrant hover shadow */
 }
 
 #button-container {
-    text-align: center;
+  text-align: center;
+  margin-top: 20px; /* Added spacing */
 }
 
 button {
-    font-family: 'Cabin';
-    border: none;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 7px;
+  font-family: 'Cabin', sans-serif;
+  border: none;
+  padding: 10px 20px; /* Adjusted padding */
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #54a0ff; /* Vibrant button color */
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Added hover effect */
+}
+
+button:hover {
+  background-color: #4584e0; /* Darker button color on hover */
 }
